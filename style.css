@@ -73,3 +73,37 @@ ul {
   color: #ffffff;
   letter-spacing: -0.045rem;
 }
+
+.main-content {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  height: 50rem;
+  background-color: #f5f5f5;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  height: 26rem;
+  width: 16rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  -webkit-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+  box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+  gap: 1.5rem;
+}
+
+.firstli {
+  background-color: #d7e8ec;
+  width: 13rem;
+  height: 2.5rem;
+  margin-left: -0.7rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
