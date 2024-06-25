@@ -107,3 +107,50 @@ ul {
   padding: 0.7rem;
   border-radius: 10px;
 }
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height:111rem ;
+    width:45rem ;
+}
+
+.up-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.participants{
+
+
+}
+
+.participants-avatars{
+    display: flex;
+    border: 2px solid blue;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5rem;
+
+
+}
+
+.participants-avatars img{
+    border-radius: 50%;
+    border: 3px solid black;
+
+        width: 5rem; 
+        height: 4.6875rem; 
+}
+
+.participants-avatar1, .participants-avatar2, .participants-avatar3, .participants-avatar4, .participants-avatar5, .participants-avatar6{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.Articles{
+    font-size: 1rem;
+}
