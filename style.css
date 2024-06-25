@@ -25,6 +25,7 @@ header {
   background-color: #f5f5f5;
   height: auto;
   padding: 0 1.2rem;
+  
 }
 
 .left-header {
@@ -77,9 +78,11 @@ ul {
 .main-content {
   display: flex;
   padding: 2rem;
-  justify-content: space-around;
-  height: 50rem;
+  justify-content: center;
+  
   background-color: #f5f5f5;
+  gap: 1.8rem;
+  flex-wrap: wrap;
 }
 
 .sidebar ul {
@@ -108,49 +111,212 @@ ul {
   border-radius: 10px;
 }
 
-
-.content{
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 70rem;
+  width: 44rem;
+  flex-wrap: wrap;
+}
+  .up-content{
     display: flex;
     flex-direction: column;
-    height:111rem ;
-    width:45rem ;
+    height: 43rem;
+    width: 44rem;
+    background-color: #ffffff;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    -webkit-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+    box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+    
+    
+  }
+
+
+.participants h1 {
+  padding: 1rem;
 }
 
-.up-content{
-    display: flex;
-    flex-direction: column;
+.participants-avatars {
+  display: flex;
+  flex-wrap: wrap;
+  
+
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5rem;
+  margin-top: 1.8rem;
+  margin-left: 2.5rem;
+  flex-wrap: wrap;
 }
 
-.participants{
+.participants-avatars img {
+  border-radius: 50%;
+  border: 3px solid black;
 
-
+  width: 5rem;
+  height: 4.6875rem;
 }
 
-.participants-avatars{
-    display: flex;
-    border: 2px solid blue;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 5rem;
-
-
+.participants-avatar1,
+.participants-avatar2,
+.participants-avatar3,
+.participants-avatar4,
+.participants-avatar5,
+.participants-avatar6 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.3rem;
 }
 
-.participants-avatars img{
-    border-radius: 50%;
-    border: 3px solid black;
-
-        width: 5rem; 
-        height: 4.6875rem; 
+.Articles {
+  font-size: 1rem;
 }
 
-.participants-avatar1, .participants-avatar2, .participants-avatar3, .participants-avatar4, .participants-avatar5, .participants-avatar6{
-    display: flex;
-    gap: 1rem;
-    font-size: 1.3rem;
+.news {
+  display: flex;
+
+  height: 18.9rem;
+  width: 43.1rem;
+  flex-wrap: wrap;
+  border-top: gray solid 2px;
 }
 
-.Articles{
-    font-size: 1rem;
+.text {
+  font-size: 0.7rem;
 }
+.news1,
+.news2,
+.news3,
+.news4 {
+  display: flex;
+  width: 19rem;
+  height: 6.6rem;
+  justify-content: space-around;
+
+  gap: 0.4rem;
+  padding: 0.7rem;
+}
+
+.news img {
+  height: 4.56rem;
+  width: 6.56rem;
+  border: 10px solid #5aa0b3;
+  border-radius: 10px;
+}
+
+span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 760px) {
+    .main-content {
+      flex-direction: column;
+      flex-wrap:wrap ;
+      align-items: flex-start;
+      padding: 1rem;
+      gap: 1rem;
+     
+    } }
+
+    @media (max-width: 760px) {
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+         justify-content: flex-start;
+           
+         align-items: flex-start;
+         padding: 4rem;
+         
+           
+         
+            
+        }
+    }
+
+
+    @media (max-width: 600px) { .participants-avatars{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+               
+             
+        }
+    }
+       
+
+    @media (max-width: 510px) {
+        .news {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: fit-content;
+            
+        }
+    }
+       
+
+    .bottom-content{
+        
+        margin-top: 5.1rem;
+        padding: 2rem;
+        background-color: #ffffff;
+        border-right: 1px solid;
+    
+    -webkit-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+    box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.67);
+    
+    }
+    .inside-content{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+       
+    
+
+        
+      
+    }
+
+    .left-content{
+        height: 284px;
+        width: 350px;
+
+    }
+
+    .right-content{
+        height: 284px;
+        width: 340px;
+
+    }
+
+    .inside-content img{
+
+height: 127px;
+width: 309px;
+
+    }
+
+    .inside-content h3, p{
+        text-align: center;
+    }
+
+    @media (max-width: 728px) {
+        .inside-content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: fit-content;
+            
+        }
+    }
+       
